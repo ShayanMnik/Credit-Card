@@ -1,0 +1,370 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+@font-face {
+    font-family: raleway;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: raleway2;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: cc;
+    src: url(../fonts/CREDC___.ttf);
+}
+@font-face {
+    font-family: opensans;
+    src: url(../fonts/OpenSans_Condensed-Regular.ttf);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+    font-family: raleway;
+    >.container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        overflow: hidden;
+        >.h2{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >h2{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 31px;
+                font-weight: 600;
+            }
+        }
+        >.content{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            >.actionbox{
+                width: 70%;
+                height: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                >.leftbox{
+                    position: relative;
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform-style: preserve-3d;
+                    >.card{
+                        cursor: pointer;
+                        position: absolute;
+                        z-index: 2;
+                        width: 400px;
+                        height: 250px;
+                        background-image: url(../img/card.webp);
+                        background-repeat: no-repeat;
+                        background-position: top;
+                        background-size: cover;
+                        object-fit: cover;
+                        border-radius: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        backface-visibility: hidden;
+                        transition: 0.5s linear;
+                        transform: perspective(800px)rotateY(0deg);
+                        >.card-content{
+                            width: 90%;
+                            height: 90%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            >.first{
+                                width: 100%;
+                                height: 33.33%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                >.chip{
+                                    padding-left: 10px;
+                                    >img{
+                                        width: 75px;
+                                        height: 65px;
+                                    }
+                                }
+                                >.bank{
+                                    padding-right: 10px;
+                                    >img{
+                                        width: 90px;
+                                        height: 60px;
+                                    }
+                                }
+                            }
+
+
+                            >.second{
+                                width: 100%;
+                                height: 33.33%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: flex-end;
+                                justify-content: space-between;
+                                align-content: flex-end;
+                                margin-bottom: 20px;
+                                padding-left: 17px;
+                                >h5{
+                                    width: 100%;
+                                    height: max-content;
+                                    font-size: 14px;
+                                    font-family: 'Source Code Pro', monospace;
+                                    margin-bottom: 5px;
+                                    color: #e4e4e4ad;
+                                }
+                                >.card-box{
+                                    width: 100%;
+                                    height: max-content;
+                                    font-family: cc;
+                                    font-size: 18px;
+                                    color: white;
+                                }
+                            }
+                            >.third{
+                                width: 100%;
+                                height: 10%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding-left: 17px;
+                                >.leftthird{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    width: 50%;
+                                    height: 140%;
+                                    align-items: flex-end;
+                                    align-content: flex-end;
+                                    >h5{
+                                        width: 100%;
+                                        height: max-content;
+                                        font-size: 11px;
+                                        font-family: 'Source Code Pro', monospace;
+                                        display: flex;
+                                        align-items: flex-end;
+                                        color: #e4e4e4ad;
+                                    }
+                                    >div{
+                                        width: 100%;
+                                        height: max-content;
+                                        font-size: 20px;
+                                        font-family: 'Source Code Pro', monospace;
+                                        font-weight: 600;
+                                        color: white;
+                                        text-transform: capitalize;
+                                    }
+                                }
+                                >.rightthrid{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    width: 50%;
+                                    height: 140%;
+                                    align-items: flex-end;
+                                    align-content: flex-end;
+                                    >h5{
+                                        width: 100%;
+                                        height: max-content;
+                                        font-size: 11px;
+                                        font-family: 'Source Code Pro', monospace;
+                                        display: flex;
+                                        align-items: flex-end;
+                                        color: #e4e4e4ad;
+                                    }
+                                    >div{
+                                        width: 100%;
+                                        height: max-content;
+                                        font-size: 20px;
+                                        font-family: 'Source Code Pro', monospace;
+                                        font-weight: 600;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    >.back{
+                        cursor: pointer;
+                        position: absolute;
+                        z-index: 1;
+                        width: 400px;
+                        height: 250px;
+                        background-color: #D32F2F;
+                        backface-visibility: hidden;
+                        border-radius: 30px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: flex-start;
+                        transition: 0.5s linear;
+                        transform: perspective(800px)rotateY(-180deg);
+                        >.blacktape{
+                            width: 100%;
+                            height: 50px;
+                            background-color: #232323;
+                            margin-top: 30px;
+                        }
+                        >.nameonback{
+                            width: 100%;
+                            height: 50px;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 30px;
+                            text-transform: capitalize;
+                            >#demo5{
+                                width: 70%;
+                                height: 100%;
+                                background-color: #ffffffcd;
+                                color: black;
+                                font-family: 'Rock Salt', cursive;
+                                font-weight: 300;
+                                font-size: 20px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 20px;
+
+                            }
+                            
+                        }
+                        >.seccod{
+                            width: 100%;
+                            height: 80px;
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: nowrap;
+                            >h5{
+                                width: 50%;
+                                height: 50px;
+                                font-size: 14px;
+                                font-family: 'Source Code Pro', monospace;
+                                color: #e4e4e4ad;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-end;
+                                padding-right: 10px;
+                            }
+                            >#demo4{
+                                height: 50px;
+                                width: 50%;
+                                font-size: 12px;
+                                font-family: cc;
+                                font-weight: 500;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                padding-left: 30px;
+                            }
+                        }
+                    }
+                }
+                >.form{
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                    >label{
+                        width: 100%;
+                        height: 35px;
+                        font-size: 12px;
+                        font-family: raleway2;
+                        font-weight: 200;
+                        color: #82857D;
+                        display: flex;
+                        align-items: flex-end;
+                        &:nth-of-type(3){
+                            width: 50% !important;
+                        }
+                        &:nth-of-type(4){
+                            width: 40%!important;
+                            padding-left: 20px;
+                        }
+                    }
+                    >input{
+                        width: 100%;
+                        height: 50px;
+                        border: 1px solid #aaaaaa;
+                        outline: none;
+                        border-radius: 5px;
+                        text-indent: 20px;
+                        &:nth-of-type(1){
+                            &::-webkit-outer-spin-button,
+                            &::-webkit-inner-spin-button{
+                                appearance: none;
+                            }
+                        }
+                        &:nth-of-type(3){
+                            width: 40% !important;
+                            &::-webkit-outer-spin-button,
+                            &::-webkit-inner-spin-button{
+                                appearance: none;
+                            }
+                        }
+                        &:nth-of-type(4){
+                            width: 40%!important;
+                            margin-left: 70px;
+                            &::-webkit-outer-spin-button,
+                            &::-webkit-inner-spin-button{
+                                appearance: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        >.myTag{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            >div{
+                width: 50%;
+                height: 100%;
+                padding: 10px;
+                font-size: 15px;
+                font-family: opensans;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: #1b1b1b9f;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >a{
+                    text-decoration: none;
+                    color: #1b1b1bd4;
+                    font-size: 15px;
+                    font-family: opensans;
+                    font-weight: 600;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
