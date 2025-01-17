@@ -2,9 +2,8 @@
 
 Welcome to this trick which you can build your own credit card ✌️
 
-![Screenshot (10)](https://github.com/user-attachments/assets/7f38f378-e7b1-44c7-b6eb-7c8d0d7062a2)
-
-![Screenshot (11)](https://github.com/user-attachments/assets/cbde0fb6-6cd8-43ff-a4e3-6ea5aa4a300a)
+![Image](https://github.com/user-attachments/assets/742b7b53-1322-429b-bb12-7ec50fa01256)
+![Image](https://github.com/user-attachments/assets/0abfded8-ad88-4dd2-8331-3ee18370e5ea)
 
 - [Demo Project](https://shayanmnik.github.io/Credit-Card/)
 
